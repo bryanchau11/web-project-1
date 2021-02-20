@@ -183,6 +183,30 @@ input[type=submit]:hover {
     justify-self: flex-start;
 }
 
+.menu {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hide;
+    align-items: space;
+    flex-direction: row;
+    height: 750px;
+}
+
+.menu_panel {
+    margin: 2% 5% 0 5%;
+    width: auto;
+    height: 700px;
+}
+
+.lower_scroll {
+    color: antiquewhite;
+    overflow-x: scroll;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+}
+
+/* Banner wine glass animation */
+
 .glass {
     margin-left: auto;
 }
