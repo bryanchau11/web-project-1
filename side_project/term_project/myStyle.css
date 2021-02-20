@@ -175,10 +175,26 @@ input[type=submit]:hover {
     justify-self: flex-start;
 }
 
+.menu {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hide;
+    align-items: space;
+    flex-direction: row;
+    height: 850px;
+}
+
+.menu_panel {
+    margin: 5%;
+    width: auto;
+    height: 700px;
+}
+
+/* Banner wine glass animation */
+
 .glass {
     margin-left: auto;
 }
-
 
 
 .head {
