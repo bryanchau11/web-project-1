@@ -15,11 +15,19 @@ body {
     background: white;
 }
 
-/* #logo {
-    position: relative;
-    top: 0;
-    left: 0;
-} */
+.menu1,
+.menu2 {
+    width: 100px;
+    height: 100px;
+    transition-property: width, height;
+    transition-duration: 2s;
+}
+
+.menu1:hover,
+.menu2:hover {
+    width: 800px;
+    height: 800px;
+}
 
 .footer {
     position: fixed;
@@ -203,46 +211,48 @@ input[type=submit]:hover {
     margin-left: auto;
 }
 
-
 .head {
     position: relative;
     height: 100px;
     width: 200px;
     display: block;
     overflow: hidden;
-    background-color: rgba(0,222,255, 0.3);
+    background-color: rgba(0, 222, 255, 0.3);
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-  }
-  .stem {
+}
+
+.stem {
     margin: 0 auto;
     height: 75px;
     width: 10px;
     background-color: rgba(255, 0, 0, 0.3);
-    border-bottom: 2px solid rgb(179, 0, 0) ;
+    border-bottom: 2px solid rgb(179, 0, 0);
     border-radius: 0px 0px 5px 5px;
-  }
-  .base {
+}
+
+.base {
     margin: 0 auto;
     margin-top: -6px;
     width: 100px;
     height: 25px;
     border-radius: 50%;
-    background-color: rgba(255,0,0, 0.3);
-  }
-  .head .liquid {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.head .liquid {
     position: absolute;
     top: -60px;
     left: 0;
     width: 200px;
     height: 220px;
-    background-color: rgba(255,0,0, 0.3);
+    background-color: rgba(255, 0, 0, 0.3);
     box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
     transition: 1s;
-  }
-  
-  .head .liquid::after,
-  .head .liquid::before {
+}
+
+.head .liquid::after,
+.head .liquid::before {
     content: '';
     width: 200%;
     height: 200%;
@@ -251,35 +261,30 @@ input[type=submit]:hover {
     left: 50%;
     transform: translate(-50%, -75%);
     background: #000;
-      box-shadow: inset 0 0 6px rgba(255, 228, 202, 0.98),
-      0 0 30px rgba(228, 202, 202, 0.42), inset 0 0 12px rgba(242, 30, 30, 0.58),
-      inset 0 0 22px rgba(242, 30, 30, 0.84),
-      inset 0 0 38px rgba(242, 30, 30, 0.88), 0 0 60px rgb(242, 30, 30);
-  }
-  
-  .head .liquid::before {
-    
+    box-shadow: inset 0 0 6px rgba(255, 228, 202, 0.98), 0 0 30px rgba(228, 202, 202, 0.42), inset 0 0 12px rgba(242, 30, 30, 0.58), inset 0 0 22px rgba(242, 30, 30, 0.84), inset 0 0 38px rgba(242, 30, 30, 0.88), 0 0 60px rgb(242, 30, 30);
+}
+
+.head .liquid::before {
     border-radius: 45%;
     background: rgba(20, 20, 20, 1);
     animation: animate 5s linear infinite;
-  }
-  
-  .head .liquid::after {
-    
+}
+
+.head .liquid::after {
     border-radius: 40%;
     background: rgba(20, 20, 20, .5);
     animation: animate 10s linear infinite;
-  }
-  
-  .head:hover .liquid{
+}
+
+.head:hover .liquid {
     top: -120px;
-  }
-  
-  @keyframes animate {
+}
+
+@keyframes animate {
     0% {
-      transform: translate(-50%, -75%) rotate(0deg);
+        transform: translate(-50%, -75%) rotate(0deg);
     }
     100% {
-      transform: translate(-50%, -75%) rotate(360deg);
+        transform: translate(-50%, -75%) rotate(360deg);
     }
-  }
+}
