@@ -67,51 +67,60 @@ a:hover {
 }
 
 .pourer {
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
     width: max-content;
     height: max-content;
     margin: auto;
-    margin-top: 100px;
 }
 
 .cup {
     width: 200px;
-    height: 200px;
-    border: 5px solid #ccc;
-    border-top: 0px;
-    border-radius: 10px;
-    line-height: 200px;
-    text-align: center;
-    color: #72091F;
-    font-size: 25px;
-    font-weight: 600;
-    position: relative;
-    overflow: hidden;
-}
-
-.cup:before {
-    content: "";
-    position: absolute;
-    width: 400px;
     height: 400px;
-    background: #F5B400;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 40%;
-    animation: fill 7s ease-in-out infinite;
+    border: solid 10px #e8e4d9;
+    border-top: solid 5px #e8e4d9;
+    border-bottom: solid 30px #e8e4d9;
+    border-radius: 5px;
+    transform: perspective(500px) rotateX(-30deg);
+    overflow:hidden;
 }
-
-@keyframes fill {
-    from {
-        top: 250px;
-        transform: translateX(-50%) rotate(0deg);
+    
+.cup:after {
+      content: '';
+      position: absolute;
+      border-radius: 10px;
+      background: #fff;
+      width: 10px;
+      height: 80px;
+      right: 10px;
+      top: 15px;
+      z-index: 1;
     }
-    to {
-        top: 100px;
-        transform: translateX(-50%) rotate(360deg);
-    }
-}
+.cup:before {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: #F5B400;
+        left: 50%;
+        transform:translateX(-50%);
+        border-radius:40%;
+        animation: fill 10s ease-in-out 1;
+     }
+     @keyframes fill {
+         from {
+             top:-500px;
+             transform:translateX(-50%) rotate(0deg);
+         }
+     
+         to {
+             top:375px;
+             transform:translateX(-50%) rotate(360deg);
+         }
+     
+     }    
+    
+  
 
 input,
 .btn {
@@ -215,7 +224,7 @@ input[type=submit]:hover {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 41px;
+    margin-top: 36px;
     margin-left: -5%;
     margin-right: -5%;
 }
@@ -245,7 +254,6 @@ input[type=submit]:hover {
     margin-bottom: 2%;
     padding-bottom: 1%;
 }
-
 
 /* Banner wine glass animation */
 
