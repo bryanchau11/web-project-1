@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="w3-animate-zoom" lang="en">
 
 <head>
 
     <meta charset="UTF-8" />
-    <title>Let's make some drink</title>
+    <title>Welcome to bordeauxien</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Farsan' rel='stylesheet'>
     <link href="pourStyles.css" rel="stylesheet">
-
+    <script src="index.js"></script>
     <style>
         header {
             position: relative;
@@ -25,15 +25,14 @@
         <a href="menu.html">MENU</a>
         <a href="about.html">ABOUT</a>
         <a href="location.html">LOCATION</a>
-        <a href="POURING.html">POURING</a>
-        <a href="member.html">MEMBER</a>
+        <a href="fill-ups.html"></a>
         <a href="contact.html" style="float: right;">CONTACT</a>
     </div>
 
 
     <header class="outside">
         <img src="images/logo.png" width="400" alt="Logo" id="logo">
-        <img src="images/head/pouring.png" alt="Header for location" id="banner">
+        <img src="images/head/black.png" alt="Header for homepage" id="banner">
 
         <div class="glass">
             <div class="head">
@@ -44,12 +43,15 @@
         </div>
     </header>
 
-    <div class="pourer">
-        <div style="text-align: center;" class="cup">
-
-        </div>
+    <div class="cupContainer">
+    <section style="text-align: center;" class="cup"></section>
+    <section style="text-align: center;" class="cup2"></section>
+    <section style="text-align: center;" class="cup3"></section>      
     </div>
 
+    <br>
+    <br>
+    <br>
     <footer>
         <div class="footer">
             &copy;Copyright 2020 <br> All rights reserved.<br>
@@ -57,6 +59,12 @@
         </div>
 
     </footer>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- all other page content -->
+        </div>
+        <footer id="footer"></footer>
+    </div>
 
 </body>
 
