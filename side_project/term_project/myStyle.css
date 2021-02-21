@@ -174,7 +174,7 @@ input[type=submit]:hover {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 36px;
+    margin-top: 41px;
     margin-left: -5%;
     margin-right: -5%;
 }
@@ -203,7 +203,9 @@ input[type=submit]:hover {
     overflow-x: scroll;
     margin-bottom: 2%;
     padding-bottom: 1%;
+    margin-top: 50px;
 }
+
 
 /* Banner wine glass animation */
 
@@ -287,4 +289,12 @@ input[type=submit]:hover {
     100% {
         transform: translate(-50%, -75%) rotate(360deg);
     }
+}
+
+.zoom {
+    transition: transform 2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
 }
